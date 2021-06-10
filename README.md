@@ -5,11 +5,11 @@
 - Nome: Daniel de Souza Rodrigues 
 - Matrícula: 18.2.8112
 - Curso: Sistemas de Informação
-- Semestre/Ano correntes: 5 semestre 
+- Semestre/Ano correntes: 5 (Quinto) semestre 
 - Link para o seu GitHub: https://github.com/daniel-itabira
 
 ## [Projeto final:](./Projeto/README.md) 
-
+.
 Apresente uma breve descrição do seu projeto.
 
 
