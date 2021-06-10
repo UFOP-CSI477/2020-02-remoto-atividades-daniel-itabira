@@ -2,11 +2,11 @@
 
 ## Atualize os seus dados:
 
-- Nome:
-- Matrícula:
-- Curso:
-- Semestre/Ano correntes:
-- Link para o seu GitHub:
+- Nome: Daniel de Souza Rodrigues 
+- Matrícula: 18.2.8112
+- Curso: Sistemas de Informação
+- Semestre/Ano correntes: Quinto semestre 
+- Link para o seu GitHub: github.com/daniel-itabira
 
 ## [Projeto final:](./Projeto/README.md) 
 
