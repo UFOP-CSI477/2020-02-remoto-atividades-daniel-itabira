@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <h1>Dados do cadastro da pessoa</h1>
+
+    <form method="POST" action="validar.html">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Ex: Daniel">
+        </div>
+
+        <div>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="edereco">
+        </div>
+
+        <div>
+            <label>Gênero:</label>
+
+            <div>
+                <input type="radio" name="genero" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="masculino" value="M">
+                <label for="masculino">Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="naobinario" value="NB">
+                <label for="naobinario">Não Binario</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="semresposta" value="SR">
+                <label for="semresposta">Sem Resposta</label>
+            </div>
+        </div>
+
+        <div>
+            <label>Áreas de Interesse:</label>
+
+            <div>
+                <input type="checkbox" name="area[0]" id="web">
+                <label for="web">WEB</label>
+                <input type="checkbox" name="area[1]" id="gestao">
+                <label for="gestao">Gestão de Informação</label>
+                <input type="checkbox" name="area[2]" id="db">
+                <label for="db">Banco de Dados</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    <a href="/Atividades/exercicios/ex01/introducao.html">Voltar</a>
+</body>
+
+</html>
