@@ -4,34 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro</title>
-</head>
+    <link rel="stylesheet" href="css/forms.css" </head>
 
 <body>
 
     <h1>Dados do cadastro da pessoa</h1>
 
     <form method="POST" action="validar.html">
-        <div>
+        <div class="controle">
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" placeholder="Ex: Daniel">
         </div>
 
-        <div>
+        <div class="controle">
             <label for="endereco">Endereço:</label>
             <input type="text" name="endereco" id="edereco">
         </div>
 
-        <div>
+        <div class="controle">
             <label for="contato">Contato:</label>
             <input type="text" name="contato" id="contato" placeholder="Ex: (31) 9 0000-0000">
         </div>
 
-        <div>
+        <div class="controle">
             <label for="cpf">CPF:</label>
             <input type="text" name="cpf" id="cpf" placeholder="Ex: 111.111.111-11">
         </div>
 
-        <div>
+        <div class="controle">
             <label>Gênero:</label>
 
             <div>
@@ -55,7 +55,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="controle">
             <label>Áreas de Interesse:</label>
 
             <div>
@@ -68,11 +68,22 @@
             </div>
         </div>
 
-        <input type="submit" value="Cadastrar">
-        <input type="reset" value="Limpar">
+        <div class="flex">
+            <div>
+                <input type="submit" value="Cadastrar">
+            </div>
+            <div>
+                <input type="reset" value="Limpar">
+            </div>
+        </div>
+       
+
     </form>
 
-    <a href="/Atividades/exercicios/ex01/introducao.html">Voltar</a>
+    <div class="controle">
+        <a href="/Atividades/exercicios/002-exercicio/introducao.html">Voltar</a>
+    </div>
+    
 </body>
 
 </html>

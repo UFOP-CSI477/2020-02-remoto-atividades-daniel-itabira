@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Introdução ao HTML</title>
+
+    <style type="text/css">
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+        html {
+            font-family: 'Roboto';
+            font-size: 16px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 20pt;
+            color: black;
+        }
+
+        p.info {
+            font-family: sans-serif;
+            font-size: 18pt;
+        }
+
+        #codigo {
+            border-color: #c6c6c6;
+            color: yellow;
+            border-style: solid;
+            border-radius: 15px;
+        }
+
+        a {
+            color: white;
+            background-color: blue;
+            text-decoration: none;
+            padding: 10px;
+            
+        }
+
+        a:hover {
+            background-color: red;
+            border-radius: 15px;
+        }
+
+        a:active {
+            background-color: green;
+            color: black;
+        }
+
+        a:link {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        a:visited {
+            background-color: #c6c6c6;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        .flex div {
+            background-color: #0000FF;
+            width: 200px;
+            margin: 20px;
+            line-height: 100px;
+            text-align: center;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Olá, eu sou o Daniel Rodrigues</h1>
+    </header>
+
+    <h2>Curso Sistemas de Informação</h2>
+    <h3>Iniciando a materia de Sistemas Web I</h3>
+    <h4>Uhuuuu!</h4>
+
+    <p>Esse é um curso de introdução a <strong>programação WEB!!</strong></p>
+    <p>Teste para paragrafo </p>
+
+    <div class="flex">
+        <div>
+            <a href="http://www.ufop.br" target="_blank">Site da UFOP</a>
+        </div>
+        <div>
+            <a href="/Atividades/exercicios/002-exercicio/cadastro.html">Cadastro</a>
+        </div>
+        <div>
+            <a href="/Atividades/exercicios/002-exercicio/relatorio.html">Relatório</a>
+        </div>
+    </div>
+    <div>
+        <img width="20%" src="../000-exercicio/img/IMG_3338.jpg" alt="Foto do daniel">
+    </div>
+</body>
+
+</html>
