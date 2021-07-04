@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JS</title>
+
+    <script>
+        'use strict'
+
+        function Pessoa(nome, sobrenome) {
+            this.nome = nome;
+            this.sobrenome = sobrenome;
+        }
+
+        const nome = "Daniel Rodrigues"
+        function carregarDados() {
+            const nome = window.prompt('Insira seu nome');
+            const sobrenome = window.prompt('Insera o seu sobrenome')
+            const pessoa = new Pessoa(nome, sobrenome);
+            console.log(pessoa);
+            document.getElementById("data").innerHTML = Date();
+            document.getElementById("nome").innerHTML = nome + " " + sobrenome;
+        }
+
+        function carregarDadosDoForm() {
+            const nome = document.frmDados.nome.value;
+            const sobrenome = document.frmDados.sobrenome.value;
+            const pessoa = new Pessoa(nome,sobrenome);
+            window.alert(`Dados carregados com sucesso ${nome} ${sobrenome}`);
+
+            let obj = {
+                name : nome,
+                lastname : sobrenome,
+                address: {
+                    street: '65 Acacia'
+                }
+            };
+        }
+    </script>
+
+</head>
+
+<body>
+    <script>
+        document.write('Olá, mundo!')
+    </script>
+    <div id="dados">
+        <div id="data"></div>
+        <div id="nome"></div>
+    </div>
+
+
+    <form action="post" name="frmDados">
+        <input type="text" name="nome">
+        <input type="text" name="sobrenome">
+    </form>
+
+    <input type="button" value="Carregar" onclick="carregarDados()">
+    <input type="button" value="Carregar do Formulário" onclick="carregarDadosDoForm()">
+</body>
+
+</html>
