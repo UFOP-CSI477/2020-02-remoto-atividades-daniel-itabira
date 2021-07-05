@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="corrida.css">
+
+</head>
+
+<body>
+
+    <div id="main">
+
+        <div class="flex">
+            <div>
+                <p id="largada">Largada</p>
+            </div>
+            <div>
+                <p id="competidor"> Competidor(a)</p>
+            </div>
+            <div>
+                <p id="tempo">Tempo (s)</p>
+
+            </div>
+        </div>
+
+
+        <form name="tblDados" onsubmit="return false">
+            
+
+            <div>
+                <label for="valor1">1</label>
+                <input type="text" name="nomeCompetidor1" id="nomeCompetidor1" value="">
+                <input type="text" name="tempoCompetidor1" id="tempoCompetidor1" value=""
+                    onkeyup="somenteNumeros(this)">
+            </div>
+
+            <div>
+                <label for="valor2">2</label>
+                <input type="text" name="nomeCompetidor2" id="nomeCompetidor2" value="">
+                <input type="text" name="tempoCompetidor2" id="tempoCompetidor2" value=""
+                    onkeyup="somenteNumeros(this)">
+            </div>
+
+            <div>
+                <label for="valor3">3</label>
+                <input type="text" name="nomeCompetidor3" id="nomeCompetidor3" value="">
+                <input type="text" name="tempoCompetidor3" id="tempoCompetidor3" value=""
+                    onkeyup="somenteNumeros(this)">
+            </div>
+
+            <div>
+                <label for="valor4">4</label>
+                <input type="text" name="nomeCompetidor4" id="nomeCompetidor4" value="">
+                <input type="text" name="tempoCompetidor4" id="tempoCompetidor4" value=""
+                    onkeyup="somenteNumeros(this)">
+            </div>
+
+            <div>
+                <label for="valor5">5</label>
+                <input type="text" name="nomeCompetidor5" id="nomeCompetidor5" value="">
+                <input type="text" name="tempoCompetidor5" id="tempoCompetidor5" value=""
+                    onkeyup="somenteNumeros(this)">
+            </div>
+
+            <div>
+                <label for="valor6">6</label>
+                <input type="text" name="nomeCompetidor6" id="nomeCompetidor6" value="">
+                <input type="text" name="tempoCompetidor6" id="tempoCompetidor6" value=""
+                    onkeyup="somenteNumeros(this)">
+            </div>
+
+            <input type="submit" value="Calcular Vencedor(a)" onclick="classificarDados()">
+            <input type="reset" value="Limpar todos os campos" id="btnLimpar">
+
+        </form>
+
+    </div>
+
+    <div id="result">
+
+        <table border="solid" name="tblResultado" id="table">
+
+            <thead>
+                <td>Posição</td>
+                <td>Largada</td>
+                <td>Competidor(a)</td>
+                <td>Tempo (s)</td>
+                <td>Resultado</td>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+
+        </table>
+
+        <input type="button" value="Limpar Tabela de Resultados" id="limpaResultado" onclick="apagarLinhas()">
+    </div>
+
+    <script src="corrida.js"></script>
+</body>
+
+</html>

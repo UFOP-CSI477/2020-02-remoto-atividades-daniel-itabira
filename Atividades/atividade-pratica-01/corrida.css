@@ -1,0 +1,78 @@
+input[type="text"] {
+    width: 30%;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 0px;
+}
+
+label {
+    padding: 5px;
+    border: 1px solid;
+    margin: 15px
+}
+
+input[type="button"] {
+    padding: 10px;
+    margin: 10px;
+    background-color: beige;
+    position: relative;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(150, 224, 150)
+}
+
+input[type="reset"] {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(255, 241, 46)
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    margin: 10px;
+}
+
+p#largada {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 110px;
+}
+
+p#competidor {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 70px;
+
+}
+
+p#tempo {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 180px;
+    
+}
+div.flex {
+    border: 1px solid black;
+}
+
+div#main {
+    position: relative;
+    text-align: center;
+}
+
+div#result {
+    position: relative;
+    text-align: center;
+}
+
+table#table {
+    width: 50%;
+    margin: auto;
+    
+}
