@@ -9,18 +9,6 @@ function somenteNumeros(num) {
     }
 }
 
-function lettersOnly(evt) {
-    evt = (evt) ? evt : event;
-    var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode :
-        ((evt.which) ? evt.which : 0));
-    if (charCode > 31 && (charCode < 65 || charCode > 90) &&
-        (charCode < 97 || charCode > 122)) {
-        alert("Só é permitido digitar letras para o campo Competidor(a).");
-        return false;
-    }
-    return true;
-}
-
 function classificarDados() {
 
     for (let index = 1; index <= 6; index++) {
@@ -91,7 +79,7 @@ function desfragmentarObjeto() {
         td_nome.innerText = arrayCompetidores[index].name;
         td_tempo.innerText = arrayCompetidores[index].time;
         td_resultado.innerText = arrayCompetidores[index].resultado;
-
+        tr.style = "color: red;"
     }
 
     arrayCompetidores.splice(0, 6);

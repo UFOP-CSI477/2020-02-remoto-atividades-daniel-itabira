@@ -13,15 +13,16 @@
 
     <div id="main">
         <h1>Competição de carrinhos de rolimã</h1>
-        <div class="flex">
-            <div>
+        
+        <div class="pai">
+            <div class="title" >
                 <p id="largada">Largada</p>
             </div>
-            <div>
-                <p id="competidor"> Competidor(a)</p>
+            <div class="title">
+                <p> Competidor(a)</p>
             </div>
-            <div>
-                <p id="tempo">Tempo (s)</p>
+            <div class="title">
+                <p>Tempo (s)</p>
 
             </div>
         </div>
@@ -29,51 +30,63 @@
 
         <form name="tblDados" onsubmit="return false">
 
-
-            <div>
-                <label for="valor1">1</label>
-                <input type="text" name="nomeCompetidor1" id="nomeCompetidor1" value=""
-                    onkeypress="return lettersOnly(event);">
-                <input type="text" name="tempoCompetidor1" id="tempoCompetidor1" value=""
+            <div class="pai">
+                <div class="title">
+                    <label  for="valor1">1</label>
+                </div>
+                
+                <input  class="title" type="text" name="nomeCompetidor1" id="nomeCompetidor1" value=""
+                pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
+                <input  class="title"  type="text" name="tempoCompetidor1" id="tempoCompetidor1" value=""
                     onkeyup="somenteNumeros(this)">
             </div>
 
-            <div>
-                <label for="valor2">2</label>
+            <div class="pai">
+                <div class="title">
+                    <label  for="valor2">2</label>
+                </div>
                 <input type="text" name="nomeCompetidor2" id="nomeCompetidor2" value=""
-                    onkeypress="return lettersOnly(event);">
+                pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
                 <input type="text" name="tempoCompetidor2" id="tempoCompetidor2" value=""
                     onkeyup="somenteNumeros(this)">
             </div>
 
-            <div>
-                <label for="valor3">3</label>
+            <div class="pai">
+                <div class="title">
+                    <label  for="valor3">3</label>
+                </div>
                 <input type="text" name="nomeCompetidor3" id="nomeCompetidor3" value=""
-                    onkeypress="return lettersOnly(event);">
+                pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
                 <input type="text" name="tempoCompetidor3" id="tempoCompetidor3" value=""
                     onkeyup="somenteNumeros(this)">
-            </div>
+            </div class="pai">
 
-            <div>
-                <label for="valor4">4</label>
+            <div class="pai">
+                <div class="title">
+                    <label  for="valor4">4</label>
+                </div>
                 <input type="text" name="nomeCompetidor4" id="nomeCompetidor4" value=""
-                    onkeypress="return lettersOnly(event);">
+                pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
                 <input type="text" name="tempoCompetidor4" id="tempoCompetidor4" value=""
                     onkeyup="somenteNumeros(this)">
             </div>
 
-            <div>
-                <label for="valor5">5</label>
+            <div class="pai">
+                <div class="title">
+                    <label  for="valor5">5</label>
+                </div>
                 <input type="text" name="nomeCompetidor5" id="nomeCompetidor5" value=""
-                    onkeypress="return lettersOnly(event);">
+                pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
                 <input type="text" name="tempoCompetidor5" id="tempoCompetidor5" value=""
                     onkeyup="somenteNumeros(this)">
             </div>
 
-            <div>
-                <label for="valor6">6</label>
+            <div class="pai">
+                <div class="title">
+                    <label  for="valor6">6</label>
+                </div>
                 <input type="text" name="nomeCompetidor6" id="nomeCompetidor6" value=""
-                    onkeypress="return lettersOnly(event);">
+                pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
                 <input type="text" name="tempoCompetidor6" id="tempoCompetidor6" value=""
                     onkeyup="somenteNumeros(this)">
             </div>

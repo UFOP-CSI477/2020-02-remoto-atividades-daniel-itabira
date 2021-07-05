@@ -6,6 +6,16 @@ input[type="text"] {
     border-radius: 0px;
 }
 
+.title {
+    width: 30%;
+}
+.pai{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    gap: 15px;
+}
+
 label {
     padding: 5px;
     border: 1px solid;
@@ -16,19 +26,21 @@ input[type="button"] {
     padding: 10px;
     margin: 10px;
     background-color: beige;
-    position: relative;
+    margin-left: 20px;
 }
 
 input[type="submit"] {
     padding: 10px;
     margin: 10px;
-    background-color: rgb(150, 224, 150)
+    background-color: rgb(150, 224, 150);
+    margin-left: 80px;
 }
 
 input[type="reset"] {
     padding: 10px;
     margin: 10px;
-    background-color: rgb(255, 241, 46)
+    background-color: rgb(255, 241, 46);
+    
 }
 
 .flex {
@@ -39,26 +51,9 @@ input[type="reset"] {
     
 }
 
-p#largada {
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 110px;
-}
 
-p#competidor {
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 70px;
-
-}
-
-p#tempo {
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 180px;
-    
-}
 div.flex {
+    display: flex;
     border: 1px solid black;
 }
 
