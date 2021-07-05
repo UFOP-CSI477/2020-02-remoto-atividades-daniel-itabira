@@ -35,7 +35,8 @@ input[type="reset"] {
     display: flex;
     flex-direction: column;
     flex-flow: row wrap;
-    margin: 10px;
+    margin: 5px;
+    
 }
 
 p#largada {
@@ -75,4 +76,5 @@ table#table {
     width: 50%;
     margin: auto;
     
+
 }
