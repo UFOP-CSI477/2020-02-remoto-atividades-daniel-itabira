@@ -1,5 +1,6 @@
 .flex-container {
     display: flex;
+    text-align: left;
     flex-direction: column;
     margin: 10px;
     width: 50%;
@@ -7,4 +8,8 @@
 
 .flex-item {
     margin: 10px;
+}
+
+h1{
+    text-align: center;
 }

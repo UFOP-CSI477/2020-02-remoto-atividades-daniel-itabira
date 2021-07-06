@@ -24,3 +24,28 @@ function limparSelect(campo) {
         campo.remove(1);
     }
 }
+
+function enviarPIX(){
+
+    let valorPIX = document.getElementById('valor');
+    let tipoChave = document.getElementById('tipoPIX');
+    tipoChave = tipoChave.options[tipoChave.selectedIndex].value;
+    let chavePIX = document.getElementById('chavePix').value;
+    let bancoInfo = document.getElementById('bancos');
+    bancoInfo = bancoInfo.options[bancoInfo.selectedIndex].innerHTML;
+    console.log(bancoInfo);
+    let dataInfo = document.getElementById('data');
+
+    let info = {
+        valor: parseFloat(valorPIX.value),
+        tipoChave: tipoChave,
+        chave: chavePIX,
+        banco: bancoInfo,
+        data: dataInfo,
+    
+    };
+
+    console.log(info);
+
+
+}

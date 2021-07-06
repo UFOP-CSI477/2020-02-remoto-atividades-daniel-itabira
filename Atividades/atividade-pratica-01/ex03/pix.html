@@ -16,19 +16,19 @@
 
             <div class="flex-item">
                 <label for="valorPix">Valor do PIX R$</label>
-                <input type="number" value="" >
+                <input type="number" value="" id="valor">
                 
             </div>
 
             <div class="flex-item">
                 <label for="tipoDeChave">Tipo de Chave</label>
                 <select name="tipoDeChavePix" id="tipoPIX">
-                    <option value="CPF">CPF</option>
-                    <option value="CNPJ">CNPJ</option>
-                    <option value="NOME">NOME</option>
-                    <option value="CELULAR">CELULAR</option>
-                    <option value="E-MAIL">E-MAIL</option>
-                    <option value="OUTROS">OUTROS</option>
+                    <option id="cpf" value="CPF">CPF</option>
+                    <option id="cnpj" value="CNPJ">CNPJ</option>
+                    <option id="nome" value="NOME">NOME</option>
+                    <option id="celular" value="CELULAR">CELULAR</option>
+                    <option id="e-mail" value="E-MAIL">E-MAIL</option>
+                    <option id="outros" value="OUTROS">OUTROS</option>
                 </select>
             </div>
 
@@ -43,8 +43,14 @@
             </div>   
 
             <div class="flex-item">
-                <input type="button" value="Enviar">
+                <label for="data">Data:</label>
+                <input id="data "type="date" value="@DateTime.Now.ToString("yyyy-MM-dd")">
             </div>
+
+            <div class="flex-item">
+                <input type="button" value="Enviar" onclick="enviarPIX()">
+            </div>
+            
             
         
         </form>
