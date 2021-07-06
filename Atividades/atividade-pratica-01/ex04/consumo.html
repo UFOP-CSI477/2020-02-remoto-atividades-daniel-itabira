@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo</title>
+    <link rel="stylesheet" href="consumo.css">
+    
+</head>
+
+<body>
+    <p>Por Daniel Rodrigues</p>
+    <div class="carro" >
+        
+        <h1>Calculadora de Consumo</h1>
+
+        <div class="flex-item">
+        <label for="qtd">Quantidade de combustível:</label>
+        <input type="number" id="qtdCombustivel" name="qtdCombustivel" value="" >
+        </div>
+
+        <div class="flex-item">
+        <label for="qtd2">Quantidade de quilômetros rodados:</label>
+        <input type="number" id="qtdKm" name="qtdKm" value="" >
+        </div>
+
+        <div class="flex-item">
+            <input type="button" id="inserir" value="Inserir" onclick="inserir()">
+        </div>
+        
+
+    </div>
+
+    <div class="carro">
+        <table border="1" style="text-align: center;">
+            <thead>
+                <tr>
+                    <td>Total de Combustivel</td>
+                    <td>Total de Km rodados</td>
+                    <td>Media de Consumo</td>
+                </tr>
+
+                <tbody id="tbody">
+
+                </tbody>
+            </thead>
+
+        </table>
+    </div>
+
+    <div class="painel">
+        <div class="flex-item">
+            <input type="button" id="finalizar" value="Calcular Total" onclick="finalizar()">
+            <input type="button" id="limparTudo" value="Limpar Tudo" onclick="limparTudo()">
+        </div>
+        
+        <div class="tableResultado" >
+            <table border="2" style="text-align: center; border-color: azure;">
+                <thead >
+                    <td>Qtd total de Combustivel</td>
+                    <td>Qtd Total de KM (Rodados)</td>
+                    <td>Media de Consumo (Combustível)</td>
+                    <td>Media de KM (Rodados)</td>
+                    <td>Media de Desempenho (Km/L)</td>
+                </thead>
+                <tbody id="tresultado">
+
+                </tbody>
+            </table>
+            
+        </div>
+
+        
+    </div>
+
+    <script src="consumo.js"></script>
+
+    
+</body>
+
+
+</html>

@@ -1,0 +1,93 @@
+.carro {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.painel {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.flex-item{
+    
+    margin: auto;
+    width: 300px;
+}
+
+.tableResultado {
+    margin: auto;
+    width: 80%;
+    
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 0px;
+}
+input#finalizar {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin: 10px;
+    width: 212px;
+    padding: 5px;
+    background-color: #fff34f;
+    border: 1px solid rgb(235, 247, 73);
+    border-radius: 15px;
+}
+input#inserir{
+
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 212px;
+    padding: 5px;
+    background-color: #42db87;
+    border: 1px solid rgb(61, 199, 114);
+    border-radius: 15px;
+}
+
+input#limparTudo{
+
+    text-align: center;
+    margin-top: 10px;
+    width: 212px;
+    padding: 5px;
+    background-color: #f7705e;
+    border: 1px solid #f7705e;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+input#inserir:hover{
+
+    background-color: #9af78d;
+    border: 1px solid rgb(0, 0, 0);
+    color: while;
+    border-radius: 15px;
+}
+
+input#limparTudo:hover{
+
+    background-color: #f7705ed;
+    border: 1px solid rgb(0, 0, 0);
+    color: while;
+    border-radius: 15px;
+}
+
+input#finalizar:hover{
+
+    background-color:#fff34f;
+    border: 1px solid rgb(0, 0, 0);
+    color: while;
+    border-radius: 15px;
+}
+
+h1{
+
+    text-align: center;
+}
