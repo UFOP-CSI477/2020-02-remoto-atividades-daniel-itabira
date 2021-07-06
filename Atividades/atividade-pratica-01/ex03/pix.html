@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de PIX</title>
+    <link rel="stylesheet" href="pix.css"></link>
+</head>
+<body onload="carregarBancos()">
+    <p>Por Daniel Rodrigues</p>
+    <h1> Controle de Pix </h1>
+
+    <div class="flex-container" >
+
+        <form name="formPix">
+
+            <div class="flex-item">
+                <label for="valorPix">Valor do PIX R$</label>
+                <input type="number" value="" >
+                
+            </div>
+
+            <div class="flex-item">
+                <label for="tipoDeChave">Tipo de Chave</label>
+                <select name="tipoDeChavePix" id="tipoPIX">
+                    <option value="CPF">CPF</option>
+                    <option value="CNPJ">CNPJ</option>
+                    <option value="NOME">NOME</option>
+                    <option value="CELULAR">CELULAR</option>
+                    <option value="E-MAIL">E-MAIL</option>
+                    <option value="OUTROS">OUTROS</option>
+                </select>
+            </div>
+
+            <div class="flex-item">
+                <label for="chavePix">Chave PIX</label>
+                <input type="text" name="chavePix" id="chavePix">
+            </div>
+
+            <div class="flex-item">
+                <label for="bancos">Selecione o Banco</label>
+                <select name="bancos" id="bancos"></select>
+            </div>   
+
+            <div class="flex-item">
+                <input type="button" value="Enviar">
+            </div>
+            
+        
+        </form>
+
+    </div>
+
+    <script src="pix.js"></script>
+    
+</body>
+</html>
