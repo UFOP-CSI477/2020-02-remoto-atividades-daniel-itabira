@@ -24,7 +24,10 @@
 <body>
     <header>
         <ul class="nav d-flex justify-content-center">
-            <img src="/site/img/logotipoprecato.jpeg" alt="" id="logo">
+            <a class="nav-img" href="{{route('principal')}}">
+                <img src="/site/img/logotipoprecato.jpeg" alt="" id="logo">
+            </a>
+
 
             <!-- Authentication Links -->
             @guest
@@ -61,9 +64,10 @@
         </ul>
     </header>
 
+    <div class="central">
     @yield('conteudo')
 
-
+    </div>
 
 
 </body>

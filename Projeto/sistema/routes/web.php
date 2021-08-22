@@ -17,7 +17,9 @@ use App\Models\Credor;
 
 Route::get('/', function () {
     return view('principal');
-});
+})->name('principal');
+
+
 
 
 Auth::routes();
