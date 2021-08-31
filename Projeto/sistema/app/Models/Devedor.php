@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Devedor extends Model
 {
     use HasFactory;
+    protected $fillable = ['nome_devedor', 'cnpj_devedor'];
 }

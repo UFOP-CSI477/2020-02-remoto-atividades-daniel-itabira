@@ -14,7 +14,7 @@ class CredorController extends Controller
      */
     public function index()
     {
-        return view('credor');
+        return view('site.credor');
     }
 
     /**
@@ -24,7 +24,7 @@ class CredorController extends Controller
      */
     public function create()
     {
-        //
+        return view('credor.create');
     }
 
     /**
@@ -34,8 +34,12 @@ class CredorController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {   
 
+       
+        Credor::create($request->all());
+
+        return redirect()->route('credor.index');
     }
 
     /**
@@ -46,7 +50,7 @@ class CredorController extends Controller
      */
     public function show(Credor $credor)
     {
-        
+        return view('credor.show', ['credor' => $credor]);
     }
 
     /**
@@ -57,7 +61,7 @@ class CredorController extends Controller
      */
     public function edit(Credor $credor)
     {
-        //
+        return view('credor.edit', ['credor' => $credor]);
     }
 
     /**
@@ -69,7 +73,10 @@ class CredorController extends Controller
      */
     public function update(Request $request, Credor $credor)
     {
-        
+        $credor->fill($request->all());
+        $credor->save();
+
+        return redirect()->route('credor.index');
     }
 
     /**
@@ -80,6 +87,7 @@ class CredorController extends Controller
      */
     public function destroy(Credor $credor)
     {
-        //
+       $credor->delete();
+       return redirect()->route('credor.index');
     }
 }

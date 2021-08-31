@@ -16,8 +16,8 @@ class CreatePagamentosTable extends Migration
         Schema::create('pagamentos', function (Blueprint $table) {
             $table->id();
             $table->string('id_remesa',10);
-            $table->string('id_credor',10);
-            $table->string('id_devedor',10);
+            $table->string('id_credor',10)->foreign('id')->on('credors');
+            $table->string('id_devedor',10)->foreing('id')->on('devedors');
             $table->float('valor_inicial',8,2);
             $table->float('valor_final',8,2);
             $table->string('status', 10);

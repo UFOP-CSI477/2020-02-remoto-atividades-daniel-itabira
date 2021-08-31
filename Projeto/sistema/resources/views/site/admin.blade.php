@@ -1,0 +1,3 @@
+@extends('principal');
+
+@section('conteudo');

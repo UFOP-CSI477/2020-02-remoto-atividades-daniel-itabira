@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CredorController;
+use App\Http\Controllers\DevedorController;
+use App\Http\Controllers\PagamentoController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +29,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('/credor', CredorController::class);
+Route::resource('/devedor', DevedorController::class);
+Route::resource('/pagamento', PagamentoController::class);
+Route::resource('/admin', AdminController::class);
+
+
+
+

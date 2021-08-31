@@ -27,8 +27,7 @@
             <a class="nav-img" href="{{route('principal')}}">
                 <img src="/site/img/logotipoprecato.jpeg" alt="" id="logo">
             </a>
-
-
+            
             <!-- Authentication Links -->
             @guest
             @if (Route::has('login'))

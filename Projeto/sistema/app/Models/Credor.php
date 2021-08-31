@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Credor extends Model
 {   
     use HasFactory; //traits 
+
+    protected $fillable = ['nome_credor', 'cpf_credor', 'status_credor'];
+    
 }

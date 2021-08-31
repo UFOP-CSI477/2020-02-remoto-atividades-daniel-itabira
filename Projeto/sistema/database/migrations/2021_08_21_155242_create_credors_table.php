@@ -15,10 +15,9 @@ class CreateCredorsTable extends Migration
     {
         Schema::create('credors', function (Blueprint $table) {
             $table->id();
-            $table->string('id_credor',10);
             $table->string('nome_credor', 100);
-            $table->string('cpf_credor',114);
-            $table->string('status_credor',10);
+            $table->string('cpf_credor',14)->unique();
+            $table->string('status_credor',10)->nullable();
             $table->timestamps();
         });
     }

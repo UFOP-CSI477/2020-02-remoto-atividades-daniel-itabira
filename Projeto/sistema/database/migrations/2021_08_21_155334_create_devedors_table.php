@@ -15,10 +15,8 @@ class CreateDevedorsTable extends Migration
     {
         Schema::create('devedors', function (Blueprint $table) {
             $table->id();
-            $table->string('id_devedor',10);
             $table->string('nome_devedor',100);
             $table->string('cnpj_devedor',18);
-            $table->timestamps();
         });
     }
 
