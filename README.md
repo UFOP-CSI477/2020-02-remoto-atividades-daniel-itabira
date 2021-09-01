@@ -8,6 +8,7 @@
 - Semestre/Ano correntes: 5º (Quinto) semestre 
 - Link para o seu GitHub: https://github.com/daniel-itabira
 
+Arquivos env.example com as necessidades
 
 Foi utilizado:
 
