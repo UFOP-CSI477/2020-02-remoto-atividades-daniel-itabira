@@ -27,7 +27,7 @@
             <a class="nav-img" href="{{route('principal')}}">
                 <img src="/site/img/logo.png" alt="" id="logo">
             </a>
-            
+
             <!-- Authentication Links -->
             @guest
             @if (Route::has('login'))
@@ -64,7 +64,12 @@
     </header>
 
     <div class="central">
-    @yield('conteudo')
+        @if(session('mensagem'))
+        <div class="alert alert-sucess">
+            {{session('mensagem')}}
+        </div>
+        @endif
+        @yield('conteudo')
 
     </div>
 

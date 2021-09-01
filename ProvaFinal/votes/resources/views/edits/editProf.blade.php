@@ -10,7 +10,6 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
-                        @method('post')
                         
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="tipo" id="inlineRadio2"

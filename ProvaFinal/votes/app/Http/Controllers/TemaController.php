@@ -14,7 +14,7 @@ class TemaController extends Controller
      */
     public function index()
     {
-        //
+        return view('temas.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class TemaController extends Controller
      */
     public function create()
     {
-        //
+        return view('creates.temasCreate');
     }
 
     /**
@@ -34,8 +34,12 @@ class TemaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {   
+        
+        Tema::create($request->all());
+        session()->flash('mensagem', 'Tema cadastrado com sucesso!');
+        return redirect()->route('menuAdm');
+
     }
 
     /**
@@ -46,7 +50,7 @@ class TemaController extends Controller
      */
     public function show(Tema $tema)
     {
-        //
+        return view('temas.index', ['tema' => $tema]);
     }
 
     /**
@@ -57,7 +61,7 @@ class TemaController extends Controller
      */
     public function edit(Tema $tema)
     {
-        //
+        return view('edits.editTema', ['tema' => $tema]);
     }
 
     /**
@@ -69,7 +73,13 @@ class TemaController extends Controller
      */
     public function update(Request $request, Tema $tema)
     {
-        //
+        $tema->fill($request->all());
+        $tema->save();
+
+        session()->flash('mensagem', 'Tema atualizado com sucesso!');
+
+        return redirect()->route('menuAdm');
+
     }
 
     /**
@@ -80,6 +90,8 @@ class TemaController extends Controller
      */
     public function destroy(Tema $tema)
     {
-        //
+        $tema->delete();
+        session()->flash('mensagem', 'Tema atualizado com sucesso!');
+        return redirect()->route('menuAdm');
     }
 }

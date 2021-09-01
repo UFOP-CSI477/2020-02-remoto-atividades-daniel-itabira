@@ -8,8 +8,11 @@
 - Semestre/Ano correntes: 5º (Quinto) semestre 
 - Link para o seu GitHub: https://github.com/daniel-itabira
 
-## [Projeto final:](./Projeto/README.md) 
-.
-Apresente uma breve descrição do seu projeto.
 
+Foi utilizado:
+
+Chrome, Php, Laravel, SQLite, Bootstrap, CSS, HTML.
+
+
+Professores estão sendo registrados pela roda registerProf (não pode estar com usuario logado)
 

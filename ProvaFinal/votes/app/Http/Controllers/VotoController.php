@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Voto;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class VotoController extends Controller
@@ -13,8 +14,9 @@ class VotoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
+    {   
+    
+        return view('creates.votosCreate');
     }
 
     /**
@@ -23,8 +25,8 @@ class VotoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        //
+    {   
+        return view('creates.votosCreate');
     }
 
     /**
@@ -34,8 +36,11 @@ class VotoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {   
+        dd($request);
+        Voto::create($request->all());
+        session()->flash('mensagem', 'Voto registrado com sucesso!');
+        return redirect()->route('menuProf');
     }
 
     /**
@@ -46,7 +51,7 @@ class VotoController extends Controller
      */
     public function show(Voto $voto)
     {
-        //
+        return view('votos.index', ['voto' => $voto]);
     }
 
     /**
