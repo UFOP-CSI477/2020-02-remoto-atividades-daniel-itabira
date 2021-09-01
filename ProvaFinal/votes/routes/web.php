@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TemaController;
 use App\Http\Controllers\VotoController;
 use App\Http\Controllers\UserController;
+use App\Models\User;
+use App\Models\Tema;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,19 +21,17 @@ Route::get('/', function () {
     return view('principal');
 })->name('principal');
 
-Auth::routes();
-
-Route::get('/home', function(){
-    return view('principal');
-})->name('home');
-
 Route::get('/menuProf', function(){
-    return view('menuProf');
+    $user = auth()->user();
+    return view('menuProf', ['usuario' => $user]);
 })->name('menuProf');
 
 Route::get('/menuAdm', function(){
-    return view('menuAdm');
+    $users = User::all()->orde;
+    $tema = Tema::all();
+    return view('menuAdm',['usuarios' => $users, 'temas' => $tema]);
 })->name('menuAdm');
+
 
 Route::get('/registerProf', function(){
     return view('auth.registerProf');
@@ -40,7 +40,7 @@ Route::get('/registerProf', function(){
 
 
 
-
+Auth::routes();
 Route::resource('/temas', TemaController::class);
 Route::resource('/votos', VotoController::class);
 
